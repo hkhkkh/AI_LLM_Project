@@ -1,17 +1,17 @@
-# 🤖 AI LLM Project
+# AI LLM Project
 
-一个完整的本地大语言模型（LLM）学习项目，涵盖从模型测试到生产部署的全流程。
+本地大语言模型学习项目，涵盖模型测试、数据生成、LoRA 微调、RAG 检索增强、Web 界面等完整流程。
 
-## ✨ 项目特点
+## 项目特点
 
-- 📦 **完全离线运行** - 本地加载模型，无需联网
-- 🎯 **渐进式学习** - 9 个步骤，由浅入深
-- 🔧 **LoRA 微调** - 低成本高效微调大模型
-- 📚 **RAG 实现** - 检索增强生成，结合知识库
-- 🌐 **Web UI** - Gradio 可视化界面
-- 🐱 **趣味项目** - 包含猫娘人格训练示例
+- 完全离线运行，本地加载模型
+- 9 个步骤渐进式学习
+- LoRA 低成本微调
+- RAG 检索增强生成
+- Gradio Web 界面
+- 包含猫娘人格训练示例
 
-## 📋 项目结构
+## 项目结构
 
 ```
 AI_LLM_Project/
@@ -25,13 +25,13 @@ AI_LLM_Project/
 ├── step8_vector_rag.py      # 向量数据库 RAG
 ├── step9_quantization.py    # 模型量化
 ├── config.py                # 配置文件
-├── catgirl/                 # 🐱 猫娘训练项目
+├── catgirl/                 # 猫娘训练项目
 └── 使用指南.md               # 详细使用说明
 ```
 
-## 🚀 快速开始
+## 快速开始
 
-### 1. 环境准备
+### 环境准备
 
 ```powershell
 # 激活虚拟环境
@@ -41,32 +41,27 @@ AI_LLM_Project/
 .\start.ps1
 ```
 
-### 2. 运行示例
+### 运行示例
 
 ```powershell
-# 测试模型是否正常
-python step1_test_model.py
-
-# 生成训练数据
-python step2_create_data.py
-
-# 开始微调
-python step3_finetune.py
+python step1_test_model.py   # 测试模型
+python step2_create_data.py  # 生成训练数据
+python step3_finetune.py     # 开始微调
 ```
 
-## 📖 详细文档
+## 详细文档
 
-完整的使用说明请参阅 [使用指南.md](使用指南.md)
+完整使用说明参阅 [使用指南.md](使用指南.md)
 
-## 🛠️ 技术栈
+## 技术栈
 
-- **模型**: Qwen2.5-0.5B-Instruct
-- **微调**: PEFT / LoRA
-- **向量库**: ChromaDB
-- **Embedding**: BGE-small-zh
-- **Web框架**: Gradio
-- **训练框架**: Transformers / TRL
+- 模型: Qwen2.5-0.5B-Instruct
+- 微调: PEFT / LoRA
+- 向量库: ChromaDB
+- Embedding: BGE-small-zh
+- Web框架: Gradio
+- 训练框架: Transformers / TRL
 
-## 📝 License
+## License
 
 MIT License
