@@ -1,3 +1,7 @@
+# 环境变量文件（包含API密钥等敏感信息）
+.env
+*.env
+
 # 虚拟环境
 venv_d/
 venv/
@@ -16,6 +20,8 @@ catgirl/catgirl_model/
 
 # 数据库文件
 chroma_db/
+deepseek_integration/chroma_db/
+deepseek_integration/test_chroma_db/
 *.sqlite3
 
 # 模型权重文件
